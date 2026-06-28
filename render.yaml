@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: capacete-inteligente
+    env: docker
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: NODERED_USER
+        value: admin
+      - key: NODERED_PASSWORD
+        value: capacete2026
+      - key: CREDENTIAL_SECRET
+        value: capacete-inteligente-secret
