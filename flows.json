@@ -7,99 +7,6 @@
     "info": "Dashboard comercial: um único template profissional com histórico real."
   },
   {
-    "id": "tls_sistema_comercial",
-    "type": "tls-config",
-    "name": "TLS HiveMQ",
-    "cert": "",
-    "key": "",
-    "ca": "",
-    "certname": "",
-    "keyname": "",
-    "caname": "",
-    "servername": "",
-    "verifyservercert": false,
-    "alpnprotocol": ""
-  },
-  {
-    "id": "mqtt_sistema_comercial",
-    "type": "mqtt-broker",
-    "name": "HiveMQ Cloud Capacete",
-    "broker": "14acbc646e274caaaf10971e5b3b335e.s1.eu.hivemq.cloud",
-    "port": "8883",
-    "tls": "tls_sistema_comercial",
-    "clientid": "flowfuse-capacete-sistema-comercial",
-    "autoConnect": true,
-    "usetls": true,
-    "protocolVersion": "4",
-    "keepalive": "60",
-    "cleansession": true,
-    "credentials": {
-      "user": "esp32",
-      "password": "Capacete2026@"
-    }
-  },
-  {
-    "id": "ui_base_sistema_comercial",
-    "type": "ui-base",
-    "name": "Sistema Capacete Comercial",
-    "path": "/dashboard",
-    "appIcon": "",
-    "includeClientData": true,
-    "acceptsClientConfig": [
-      "ui-notification",
-      "ui-control"
-    ],
-    "showPathInSidebar": false,
-    "showPageTitle": true,
-    "navigationStyle": "default"
-  },
-  {
-    "id": "ui_theme_sistema_comercial",
-    "type": "ui-theme",
-    "name": "Tema Sistema Comercial",
-    "colors": {
-      "surface": "#ffffff",
-      "primary": "#0f766e",
-      "bgPage": "#f3f4f6",
-      "groupBg": "#ffffff",
-      "groupOutline": "#d1d5db"
-    },
-    "sizes": {
-      "density": "default",
-      "pagePadding": "14px",
-      "groupGap": "14px",
-      "groupBorderRadius": "10px",
-      "widgetGap": "14px"
-    }
-  },
-  {
-    "id": "ui_page_sistema_comercial",
-    "type": "ui-page",
-    "name": "Sistema Comercial",
-    "ui": "ui_base_sistema_comercial",
-    "path": "/sistema-capacete",
-    "icon": "shield",
-    "layout": "grid",
-    "theme": "ui_theme_sistema_comercial",
-    "order": 1,
-    "className": "",
-    "visible": true,
-    "disabled": false
-  },
-  {
-    "id": "ui_group_sistema_comercial",
-    "type": "ui-group",
-    "name": "Painel profissional completo",
-    "page": "ui_page_sistema_comercial",
-    "width": "12",
-    "height": "1",
-    "order": 1,
-    "showTitle": false,
-    "className": "",
-    "visible": "true",
-    "disabled": "false"
-  },
-  {
     "id": "mqtt_in_sistema_comercial",
     "type": "mqtt in",
     "z": "tab_sistema_comercial",
@@ -249,5 +156,111 @@
     "x": 730,
     "y": 290,
     "wires": []
+  },
+  {
+    "id": "mqtt_sistema_comercial",
+    "type": "mqtt-broker",
+    "name": "HiveMQ Cloud Capacete",
+    "broker": "14acbc646e274caaaf10971e5b3b335e.s1.eu.hivemq.cloud",
+    "port": "8883",
+    "tls": "tls_sistema_comercial",
+    "clientid": "flowfuse-capacete-sistema-comercial",
+    "autoConnect": true,
+    "usetls": true,
+    "protocolVersion": "4",
+    "keepalive": "60",
+    "cleansession": true,
+    "credentials": {
+      "user": "esp32",
+      "password": "Capacete2026@"
+    }
+  },
+  {
+    "id": "ui_group_sistema_comercial",
+    "type": "ui-group",
+    "name": "Painel profissional completo",
+    "page": "ui_page_sistema_comercial",
+    "width": "12",
+    "height": "1",
+    "order": 1,
+    "showTitle": false,
+    "className": "",
+    "visible": "true",
+    "disabled": "false"
+  },
+  {
+    "id": "tls_sistema_comercial",
+    "type": "tls-config",
+    "name": "TLS HiveMQ",
+    "cert": "",
+    "key": "",
+    "ca": "",
+    "certname": "",
+    "keyname": "",
+    "caname": "",
+    "servername": "",
+    "verifyservercert": false,
+    "alpnprotocol": ""
+  },
+  {
+    "id": "ui_page_sistema_comercial",
+    "type": "ui-page",
+    "name": "Sistema Comercial",
+    "ui": "ebd4008dd1576ddf",
+    "path": "/sistema-capacete",
+    "icon": "shield",
+    "layout": "grid",
+    "theme": "ui_theme_sistema_comercial",
+    "order": 2,
+    "className": "",
+    "visible": true,
+    "disabled": false
+  },
+  {
+    "id": "ebd4008dd1576ddf",
+    "type": "ui-base",
+    "name": "My Dashboard",
+    "path": "/dashboard",
+    "appIcon": "",
+    "includeClientData": true,
+    "acceptsClientConfig": [
+      "ui-notification",
+      "ui-control"
+    ],
+    "showPathInSidebar": false,
+    "headerContent": "page",
+    "navigationStyle": "default",
+    "titleBarStyle": "default",
+    "showReconnectNotification": true,
+    "notificationDisplayTime": 1,
+    "showDisconnectNotification": true,
+    "allowInstall": false
+  },
+  {
+    "id": "ui_theme_sistema_comercial",
+    "type": "ui-theme",
+    "name": "Tema Sistema Comercial",
+    "colors": {
+      "surface": "#ffffff",
+      "primary": "#0f766e",
+      "bgPage": "#f3f4f6",
+      "groupBg": "#ffffff",
+      "groupOutline": "#d1d5db"
+    },
+    "sizes": {
+      "density": "default",
+      "pagePadding": "14px",
+      "groupGap": "14px",
+      "groupBorderRadius": "10px",
+      "widgetGap": "14px"
+    }
+  },
+  {
+    "id": "656d906203343119",
+    "type": "global-config",
+    "env": [],
+    "modules": {
+      "@flowfuse/node-red-dashboard": "1.30.2"
+    }
   }
 ]

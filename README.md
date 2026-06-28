@@ -1,22 +1,22 @@
-# Capacete Inteligente
+# Capacete Inteligente — Node-RED em Nuvem
 
-Sistema Inteligente de Monitoramento de Capacete com ESP32, HiveMQ Cloud, Node-RED e Dashboard online.
+Projeto pronto para publicar no Render.
 
-## Links depois do deploy no Render
+## Endereços depois do deploy
 
 Editor Node-RED:
 
 ```text
-https://SEU-PROJETO.onrender.com/red
+https://SEU-LINK.onrender.com/red
 ```
 
 Dashboard:
 
 ```text
-https://SEU-PROJETO.onrender.com/dashboard/sistema-capacete
+https://SEU-LINK.onrender.com/dashboard/sistema-capacete
 ```
 
-## Login padrão do editor
+## Login do editor Node-RED
 
 Usuário:
 
@@ -30,8 +30,6 @@ Senha:
 capacete2026
 ```
 
-Altere depois no Render pelas variáveis de ambiente.
-
 ## Observação
 
-No plano gratuito do Render, o serviço pode dormir quando ficar sem uso. Para histórico permanente em produção, use banco de dados ou disco persistente.
+O plano grátis do Render pode dormir quando ficar sem uso. Para histórico 100% permanente, use banco de dados ou disco persistente.

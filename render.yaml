@@ -10,4 +10,4 @@ services:
       - key: NODERED_PASSWORD
         value: capacete2026
       - key: CREDENTIAL_SECRET
-        generateValue: true
+        value: capacete-inteligente-secret

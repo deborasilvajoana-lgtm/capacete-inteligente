@@ -7,10 +7,8 @@ module.exports = {
     flowFile: "flows.json",
     credentialSecret: process.env.CREDENTIAL_SECRET || "capacete-inteligente-secret",
     uiPort: process.env.PORT || 1880,
-
     httpAdminRoot: "/red",
     httpNodeRoot: "/",
-
     adminAuth: {
         type: "credentials",
         users: [{
@@ -19,23 +17,11 @@ module.exports = {
             permissions: "*"
         }]
     },
-
-    httpNodeCors: {
-        origin: "*",
-        methods: "GET,PUT,POST,DELETE"
-    },
-
+    functionGlobalContext: {},
     editorTheme: {
-        projects: {
-            enabled: false
-        }
+        projects: { enabled: false }
     },
-
     logging: {
-        console: {
-            level: "info",
-            metrics: false,
-            audit: false
-        }
+        console: { level: "info", metrics: false, audit: false }
     }
 };

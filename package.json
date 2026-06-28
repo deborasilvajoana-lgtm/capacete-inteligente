@@ -1,7 +1,7 @@
 {
-  "name": "capacete-inteligente",
+  "name": "capacete-inteligente-render",
   "version": "1.0.0",
-  "description": "Sistema Inteligente de Monitoramento de Capacete com ESP32, HiveMQ e Node-RED",
+  "description": "Sistema de monitoramento de capacete inteligente com ESP32, HiveMQ, Node-RED e Dashboard online.",
   "private": true,
   "scripts": {
     "start": "node-red --settings ./settings.js --userDir . --port ${PORT:-1880}"
