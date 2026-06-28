@@ -1,0 +1,14 @@
+{
+  "name": "capacete-inteligente",
+  "version": "1.0.0",
+  "description": "Sistema Inteligente de Monitoramento de Capacete com ESP32, HiveMQ e Node-RED",
+  "private": true,
+  "scripts": {
+    "start": "node-red --settings ./settings.js --userDir . --port ${PORT:-1880}"
+  },
+  "dependencies": {
+    "node-red": "^4.0.9",
+    "@flowfuse/node-red-dashboard": "^1.27.0",
+    "bcryptjs": "^2.4.3"
+  }
+}
